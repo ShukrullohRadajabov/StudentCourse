@@ -1,0 +1,49 @@
+### Create Student Course Mark
+POST localhost:8080/student-course-mark/create
+Content-Type: application/json
+
+{
+  "studentId": 6,
+  "courseId": 4,
+  "mark": 2
+}
+
+### Student Course Mark list
+GET localhost:8080/student-course-mark/list
+
+
+### Update Student Course Mark
+PUT localhost:8080/student-course-mark/update/1
+Content-Type: application/json
+
+{
+  "studentId": 1,
+  "courseId": 1,
+  "mark": 4
+}
+
+### Get Student Course Mark by id
+GET localhost:8080/student-course-mark/get/1
+
+### Get Student Course Mark by id with detail
+GET localhost:8080/student-course-mark/get-detail/1
+
+### Get Student Course Mark Get Mark By date
+GET localhost:8080/student-course-mark/get_by_given_date/1
+
+
+### Get Student Mark by Date
+GET localhost:8080/student-course-mark/get-student-mark-between-date/6
+Content-Type: application/json
+
+{
+  "fromDate": "2023-04-06",
+  "toDate": "2023-04-06"
+}
+
+
+
+
+
+
+

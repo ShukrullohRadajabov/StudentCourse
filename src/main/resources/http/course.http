@@ -1,0 +1,51 @@
+### Course create
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "name": "History",
+  "price": 100,
+  "duration": 10
+}
+
+### Course get by id
+GET localhost:8080/course/get/1
+
+
+### Course list
+GET localhost:8080/course/list
+
+### Update course
+PUT localhost:8080/course/update/2
+Content-Type: application/json
+
+{
+  "name": "Vali1",
+  "price": 12,
+  "duration": 20
+}
+
+
+### Get course by name
+GET localhost:8080/course/get_by_name/Ali
+
+
+### Get course by price
+GET localhost:8080/course/get_by_price/20
+
+### Get course by gender
+GET localhost:8080/course/get_by_duration/20
+
+### Delete course
+DELETE localhost:8080/course/delete/1
+
+### Get course by given date
+GET localhost:8080/course/get_by_given_date/2023-04-06
+
+### Get course list between two dates
+GET localhost:8080/course/get_by_given_date/2023-04-06/2023-04-07
+
+### Get course list between two price
+GET localhost:8080/course/get_by_between_price/10/31
+
+
